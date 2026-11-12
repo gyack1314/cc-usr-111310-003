@@ -1,0 +1,58 @@
+{
+  "kind": "lot-bridge",
+  "raw_lots": {
+    "r1": "100",
+    "r2": "20",
+    "unused": "7"
+  },
+  "events": [
+    {
+      "event_id": "split",
+      "version": 1,
+      "inputs": {},
+      "outputs": {
+        "a": "40",
+        "b": "50"
+      },
+      "loss": "10"
+    },
+    {
+      "event_id": "mix",
+      "version": 1,
+      "inputs": {
+        "a": "40",
+        "r2": "20"
+      },
+      "outputs": {
+        "c": "60"
+      },
+      "loss": "0"
+    },
+    {
+      "event_id": "merge",
+      "version": 1,
+      "inputs": {
+        "b": "30",
+        "c": "60"
+      },
+      "outputs": {
+        "d": "90"
+      },
+      "loss": "0"
+    }
+  ],
+  "batches": [
+    [
+      "split"
+    ],
+    [
+      "mix"
+    ],
+    [
+      "merge"
+    ]
+  ],
+  "withdraw_events": [],
+  "unit": "base-mass",
+  "warehouse_version": "w0"
+}
